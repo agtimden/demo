@@ -1,0 +1,179 @@
+/* Общие стили для всех элементов */
+* {
+    box-sizing: border-box; /* Установка модели блочной верстки */
+    margin: 0; /* Сброс внешних отступов */
+    padding: 0; /* Сброс внутренних отступов */
+}
+
+/* Стили для тела документа */
+body {
+    font-family: 'Montserrat', sans-serif; /* Установка основного шрифта */
+    line-height: 1.6; /* Межстрочный интервал */
+    color: #333; /* Цвет текста */
+}
+
+/* Стили для блоков */
+header {
+    background-color: #f8f9fa; /* Цвет фона шапки */
+    padding: 20px; /* Внутренние отступы */
+    margin-bottom: 30px; /* Внешний отступ снизу */
+}
+
+main {
+    padding: 0 20px; /* Внутренние отступы слева и справа */
+    margin-bottom: 30px; /* Внешний отступ снизу */
+}
+
+footer {
+    background-color: black; /* Цвет фона подвала */
+    color: white; /* Цвет текста в подвале */
+    padding: 20px; /* Внутренние отступы */
+    margin-top: 30px; /* Внешний отступ сверху */
+}
+
+/* Стили для ссылок в подвале */
+footer a {
+    color: #ff7f00; /* Цвет ссылок в подвале */
+}
+
+footer a:hover {
+    color: #ffa500; /* Цвет ссылок при наведении */
+}
+
+/* Стили для навигации */
+nav {
+    display: flex; /* Гибкое расположение элементов */
+    flex-wrap: wrap; /* Перенос элементов на новую строку */
+    gap: 15px; /* Расстояние между элементами */
+    margin-top: 20px; /* Внешний отступ сверху */
+}
+
+nav a {
+    color: #2c3e50; /* Цвет ссылок */
+    text-decoration: none; /* Удаление подчеркивания */
+    font-family: 'Montserrat', sans-serif; /* Шрифт ссылок */
+    font-size: 1.1em; /* Размер шрифта */
+    transition: color 0.3s ease; /* Плавное изменение цвета */
+}
+
+nav a#active {
+    color: tomato; /* Цвет активной ссылки */
+    font-weight: 700; /* Жирный шрифт */
+}
+
+/* Стили для секций */
+section {
+    margin-bottom: 40px; /* Внешний отступ снизу */
+    padding: 20px; /* Внутренние отступы */
+    background-color: #fff; /* Цвет фона */
+    border-radius: 5px; /* Скругление углов */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Тень */
+}
+
+/* Стили для заголовков */
+h1 {
+    font-size: 2.5em; /* Размер шрифта */
+    color: #2c3e50; /* Цвет текста */
+    margin-bottom: 20px; /* Внешний отступ снизу */
+}
+
+h2 {
+    font-size: 1.8em; /* Размер шрифта */
+    color: #2c3e50; /* Цвет текста */
+    margin-bottom: 15px; /* Внешний отступ снизу */
+}
+
+/* Стили для параграфов */
+p {
+    font-size: 1.1em; /* Размер шрифта */
+    margin-bottom: 15px; /* Внешний отступ снизу */
+}
+
+/* Стили для изображений */
+img {
+    width: 50%; /* Ширина изображения */
+    height: auto; /* Автоматическая высота */
+    display: block; /* Блочное отображение */
+    margin: 20px 0; /* Внешние отступы */
+    border-radius: 5px; /* Скругление углов */
+}
+
+/* Стили для таблиц */
+table {
+    width: auto; /* Автоматическая ширина */
+    border-collapse: collapse; /* Слияние границ */
+    margin: 20px 0; /* Внешние отступы */
+}
+
+th, td {
+    padding: 6px; /* Внутренние отступы */
+    text-align: left; /* Выравнивание текста */
+    border: 1px solid #ddd; /* Границы ячеек */
+    white-space: nowrap; /* Запрет переноса текста */
+}
+
+th {
+    background-color: #f8f9fa; /* Цвет фона заголовков */
+    font-weight: 600; /* Жирный шрифт */
+}
+
+tr:nth-child(even) {
+    background-color: #f8f9fa; /* Цвет фона четных строк */
+}
+
+/* Стили для ссылок */
+a {
+    text-decoration: none; /* Удаление подчеркивания */
+    font-family: 'Montserrat', sans-serif; /* Шрифт */
+    font-size: 1.1em; /* Размер шрифта */
+    color: #2c3e50; /* Цвет текста */
+    margin-right: 20px; /* Внешний отступ справа */
+    transition: color 0.3s ease; /* Плавное изменение цвета */
+}
+
+a:hover {
+    color: #ff7f00; /* Цвет при наведении */
+}
+
+/* Стили для списков */
+ul {
+    padding-left: 20px; /* Внутренний отступ слева */
+    margin: 15px 0; /* Внешние отступы */
+}
+
+li {
+    margin-bottom: 10px; /* Внешний отступ снизу */
+    font-size: 1.1em; /* Размер шрифта */
+}
+
+/* Адаптивность для главной страницы */
+@media (max-width: 800px) {
+    #about img {
+        width: 500px; /* Ширина изображения для средних экранов */
+    }
+}
+
+@media (max-width: 600px) {
+    h1 {
+        text-align: center; /* Центрирование заголовка */
+    }
+    nav {
+        flex-direction: column; /* Вертикальное расположение элементов */
+        align-items: center; /* Центрирование по горизонтали */
+    }
+    nav a {
+        font-size: 1.35em; /* Увеличенный размер шрифта */
+    }
+    #about img {
+        width: 100%; /* Полная ширина изображения */
+    }
+    table, th, td {
+        font-size: 0.95em; /* Уменьшенный размер шрифта */
+    }
+}
+
+@media (max-width: 400px) {
+    table, th, td {
+        font-size: 0.8em; /* Еще меньший размер шрифта */
+    }
+} 
